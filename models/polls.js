@@ -14,7 +14,7 @@ var PollSchema = new Schema({
                 required: true
             },
             votes: {
-                default: 2,
+                default: 0,
                 type: Number
             }
         }
