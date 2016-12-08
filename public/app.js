@@ -116,6 +116,7 @@
             $http.get('/api/poll/' + id)
                  .then(function(response) {
                     vm.id = response.data._id;
+                    vm.owner = response.data.owner;
                     vm.poll = response.data.options;
                     console.log(vm.poll);
                     vm.data = response.data;
