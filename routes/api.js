@@ -214,7 +214,7 @@ router.post('/register', function(request, response) {
        var user = new User();
        user.name = request.body.name;
        console.time('bcryptHash');
-       user.password = bcrypt.hashSync(request.body.password, bcrypt.genSaltSync(30));
+       user.password = bcrypt.hashSync(request.body.password, bcrypt.genSaltSync(10));
        console.timeEnd('bcryptHash');
        user.save(function(err, document) {
            if(err) {
