@@ -96,7 +96,7 @@
         vm.title = "PollController";
         vm.poll;
         vm.data;
-
+        vm.link = 'http://localhost:8080/' + $location.path();
         vm.addOption = function() {
             if(vm.option) {
                 $http.put('/api/polls/add-option', { option: vm.option, id: $routeParams.id }).then(function(response) {
