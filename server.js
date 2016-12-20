@@ -1,5 +1,5 @@
 var port = process.env.PORT || 8080;
-var db = "mongodb://localhost:27017/fcc-voting-application"
+var db = "mongodb://theo:theo@ds141118.mlab.com:41118/heroku_jlhswwr5"
 var router = require('./routes/api');
 var express = require('express');
 var bodyParser = require('body-parser');
